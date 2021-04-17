@@ -13,17 +13,34 @@
   <div class="container">
 
     <div class="jumbotron text-center">
-      <h1>Scrape New Data</h1>
-      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Find a phone!</a></p>
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
     </div>
 
     <!-- Phone Listings -->
-    <div class="row" id="craiglist-listings">
+    <div class="row">
       <div class="col-md-12">
-        <h4 class="heading">{{listings.price}} {{listings.headline}}</h4>
-        <small>{{listings.reviews}}</small>
+        <h2> <strong> Latest Mars News </strong> </h2>
+        <h4 class="heading">{{newest_title}} </h4>
+        <small>{{newest_paragraph}</small>
       </div>
     </div>
+
+
+    <div class="row">
+      <div class="col-md-8">
+        <h2> <strong> Featured Mars Image </strong></h2>
+         <small>image</small>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <h2> <strong> Mars Facts </strong> </h2>
+         <small>table</small>
+      </div>
+    </div>
+
 
   </div>
 </body>
