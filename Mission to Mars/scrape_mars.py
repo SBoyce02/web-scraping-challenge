@@ -68,4 +68,17 @@ def scrape():
     table_html = clean_df.to_html()
     table_html
 
-browser.quit()
+    #store in a dictionary
+
+    Mars_data = {
+        "lastest_news_title": newest_title
+        "lastest_news_paragraph": newest_paragraph
+        "mars_image": featured_image_url
+        "mars_table": table_html
+            }
+
+    browser.quit()
+
+    #return results
+
+    return Mars_data
